@@ -48,31 +48,39 @@
             background-color: darkgoldenrod;
             border-radius: 5px;
         }
+
+        .playing {
+            transform: scale(1.1);
+            border-color: #ffc600;
+            box-shadow: 0 0 1rem #ffc600;
+        }
     </style>
 </head>
 
 <body>
     <h1>Drum Kit</h1>
     <div class="keys">
-        <div class="key"><span class="sound">a</span></div>
-        <div class="key"><span class="sound">s</span></div>
-        <div class="key"><span class="sound">d</span></div>
-        <div class="key"><span class="sound">f</span></div>
-        <div class="key"><span class="sound">g</span></div>
-        <div class="key"><span class="sound">h</span></div>
-        <div class="key"><span class="sound">j</span></div>
+        <div class="key" data-key="65"><span class="sound">a</span></div>
+        <div class="key" data-key="83"><span class="sound">s</span></div>
+        <div class="key" data-key="68"><span class="sound">d</span></div>
+        <div class="key" data-key="70"><span class="sound">f</span></div>
+        <div class="key" data-key="71"><span class="sound">g</span></div>
+        <div class="key" data-key="72"><span class="sound">h</span></div>
+        <div class="key" data-key="74"><span class="sound">j</span></div>
     </div>
 
     <button class="btn Start">Start</button>
     <button class="btn Stop">Stop</button>
     <button class="btn Play">Play</button>
-    <audio src="sounds/boom.wav"></audio>
-    <audio src="sounds/clap.wav"></audio>
-    <audio src="sounds/hihat.wav"></audio>
-    <audio src="sounds/kick.wav"></audio>
-    <audio src="sounds/openhat.wav"></audio>
-    <audio src="sounds/ride.wav"></audio>
-    <audio src="sounds/snare.wav"></audio>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/boom.wav"></audio>
+    <audio data-key="68" src="sounds/hihat.wav"></audio>
+    <audio data-key="70" src="sounds/kick.wav"></audio>
+    <audio data-key="71" src="sounds/openhat.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
