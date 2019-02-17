@@ -14,6 +14,13 @@
 
         html {
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url("photos/drum2.jpg");
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
         }
 
         .keys {
@@ -23,9 +30,11 @@
         }
 
         .key {
-            border: 2px solid black;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
             width: 50px;
             height: 50px;
+            border-radius: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,11 +50,13 @@
             margin: 60px;
         }
 
-        button {
+        .btn {
+            width: 7%;
             display: block;
             margin: 15px auto;
-            border: 2px solid black;
-            background-color: darkgoldenrod;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            text-align: center;
             border-radius: 5px;
         }
 
@@ -69,9 +80,9 @@
         <div class="key" data-key="74"><span class="sound">j</span></div>
     </div>
 
-    <button class="btn Start">Start</button>
-    <button class="btn Stop">Stop</button>
-    <button class="btn Play">Play</button>
+    <div class="btn Start">Start</div>
+    <div class="btn Stop">Stop</div>
+    <div class="btn Play">Play</div>
     <audio data-key="65" src="sounds/clap.wav"></audio>
     <audio data-key="83" src="sounds/boom.wav"></audio>
     <audio data-key="68" src="sounds/hihat.wav"></audio>

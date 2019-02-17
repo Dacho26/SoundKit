@@ -14,7 +14,7 @@ stopBtn.addEventListener("click", () => {
 })
 
 playBtn.addEventListener("click", () => {
-    sound.
+
 
 })
 
